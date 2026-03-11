@@ -39,3 +39,11 @@ cd bioinformatics_stronghold
 python finding_a_shared_motif.py -i rosalind_lcsm.txt -o output.txt
 ```
 
+## Work in progress
+- add folder containing all text files so users don't have to download datasets.
+- Update older scripts so they can be used via command line
+- Comment older scripts
+- Solve harder rosalind problems
+- comment in example script on my solution
+- add workflow mark down file that explains how I solved some of the problems
+
