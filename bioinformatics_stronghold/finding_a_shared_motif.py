@@ -102,7 +102,7 @@ def main():
         # Compare each substring to the smallest dna substrings
         for dna in dna_strings:
             dna_substrings = partition(dna, n) # Partition into n sized sequences
-            substrings = dna_substrings & substrings # Find the "blank" between sets
+            substrings = dna_substrings & substrings # Find the intersection between sets
 
             # If substrings is empty then there are no motifs break loop
             if len(substrings) == 0:
