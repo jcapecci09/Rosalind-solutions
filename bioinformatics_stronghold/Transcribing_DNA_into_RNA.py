@@ -1,5 +1,6 @@
 """ Transcribes DNA sequence to RNA (Thymine to uracil)
 
+corresponding dataset: rosalind_rna.txt
 Author: Jimmy Capecci
 """
 

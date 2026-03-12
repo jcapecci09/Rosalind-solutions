@@ -1,6 +1,7 @@
 """Finds the largest motif from a multi-fasta file. If multiple motifs are the same size 
 the script will return only one randomly.
 
+corresponding dataset: rosalind_lcsm.txt
 Author: Jimmy Capecci
 """
 
