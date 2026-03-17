@@ -1,6 +1,8 @@
 """Find the starting position of motif in a sequence. There could be multiple
 motifs in the sequence. 
 
+
+Corresponding dataset: rosalind_subs.txt
 Challenges:
 I messed up once b/c I forgot to use strip() at first. Took me 5 mins to 
 figure that out.
