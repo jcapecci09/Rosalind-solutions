@@ -9,7 +9,7 @@ Given 6 integers corresponding to number of breeding pairs per each allele type.
 5. Aaaa
 6. aaaa
 
-TODO Add dataset from rosalind, test, write corresponding dataset in comments
+corresponding dataset: rosalind_iev.txt
 
 Author: Jimmy Capecci
 """
@@ -55,7 +55,7 @@ def main():
 
     # Open outfile and write expected value
     with open(outfile, 'w') as f:
-        f.write(expected_value)
+        f.write(str(expected_value) + '\n')
 
 if __name__ == '__main__':
     main()
