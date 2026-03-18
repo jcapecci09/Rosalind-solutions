@@ -12,6 +12,7 @@ Author: Jimmy Capecci
 import argparse
 import sys
 
+
 def counter(letter: str, input: str) -> str:
     """Returns the number of times letter appears in the input
 
@@ -26,6 +27,7 @@ def counter(letter: str, input: str) -> str:
         if letter == line:
             count += 1
     return str(count)
+
 
 def main():
 
