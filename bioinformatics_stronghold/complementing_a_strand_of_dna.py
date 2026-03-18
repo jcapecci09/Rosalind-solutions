@@ -3,7 +3,7 @@
 This could be performed easily with biopython, but I opted to create my own 
 solution
 
-TODO grab input file from rosalind, Test script, write corresponding dataset in comments
+Corresponding dataset: rosalind_revc.txt
 
 Author: Jimmy Capecci
 """
@@ -39,7 +39,7 @@ def main():
 
     # Write output
     with open(outfile, 'w') as f:
-        f.write(complement[::-1])
+        f.write(complement[::-1] + '\n')
 
 if __name__ == '__main__':
     main()
