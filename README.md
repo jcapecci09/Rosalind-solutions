@@ -19,28 +19,13 @@ For an example implementation, see `finding_a_shared_motif.py`.
 git clone https://github.com/jcapecci09/Rosalind-solutions.git
 ```
 
-2. Download the dataset from https://rosalind.info/problems/lcsm/
-
-3. Place the dataset in the project directory. Example using linux:
+2. Run the script (Linux/macOS):
 
 ```bash
-mv rosalind_lcsm.txt bioinformatics_stronghold
-```
-
-4. In linux/macOS cd into the directory
-
-```bash
-cd bioinformatics_stronghold
-```
-
-5. Run the script (Linux/macOS):
-
-```bash
-python finding_a_shared_motif.py -i rosalind_lcsm.txt -o output.txt
+python3 bioinformatics_stronghold/finding_a_shared_motif.py -i datasets/rosalind_lcsm.txt -o outputs/rosalind_lcsm_output.txt
 ```
 
 ## Work in progress
-- add folder containing all text files so users don't have to download datasets.
 - Update older scripts so they can be used via command line
 - Comment older scripts
 - Solve harder rosalind problems
