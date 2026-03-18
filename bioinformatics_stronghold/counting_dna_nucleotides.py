@@ -1,8 +1,26 @@
+"""Counts the respective number of nucleotides appearing in a dna string. 
+Only works if input dna string is on one line. 
+
+Example Output: 214 191 199 212
+
+Where numbers correspond to the following:
+A C G T
+
+Author: Jimmy Capecci
+"""
 
 import argparse
 import sys
 
-def counter(letter: str, input: str):
+def counter(letter: str, input: str) -> str:
+    """Returns the number of times letter appears in the input
+
+    :param letter: Letter to find in input
+    :param input: Input dna string
+    :return: Number of times letter appears in input as a string
+    """
+
+    # Simply counts occurences of letter in input
     count = 0 
     for line in input:
         if letter == line:
@@ -20,10 +38,12 @@ def main():
     args = parser.parse_args(sys.argv[1:])
     infile = args.input
     outfile = args.output
-            
+    
+    # Input file to read dna string
     with open(infile, 'r') as file:
         data = file.readline()
     
+    # Output file to write occurences to
     with open(outfile, 'w') as f:
         f.write(f'{counter('A', data)} {counter('C', data)} {counter('G', data)} {counter('T', data)}\n')
 
