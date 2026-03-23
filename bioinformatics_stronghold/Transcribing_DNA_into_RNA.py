@@ -6,18 +6,19 @@ Author: Jimmy Capecci
 
 import argparse
 import sys
+import toolkit
 
 def main():
 
     # Set up parser for command-line interface
     parser = argparse.ArgumentParser(description='Converts DNA to RNA')
     parser.add_argument('-i', '--input', help='input file', required=True)
-    parser.add_argument('-o', '--output', help='output file', required=True)
+    parser.add_argument('-o', '--output', help='output file')
 
-    # define infile and outfile
+    # define infile
     args = parser.parse_args(sys.argv[1:])
     infile = args.input
-    outfile = args.output
+    
 
     # Opens DNA sequence and converts all thymines to uracil
     # This could be performed with string method replace, but I opted to do it myself
@@ -30,8 +31,8 @@ def main():
             new_sequence += letter
     
     # Write RNA sequence to outfile
-    with open(outfile, 'w') as f:
-        f.write(new_sequence)
+
+    toolkit.output(new_sequence, args)
 
 if __name__ == '__main__':
     main()

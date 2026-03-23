@@ -1,3 +1,5 @@
+
+
 # Open multi-fasta file
 with open('rosalind_cons (2).txt', 'r') as f:
     fastas = []
