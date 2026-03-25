@@ -1,4 +1,6 @@
 
+import subprocess
+import sys
 
 dna =  'ATGGTCTACATAGCTGACAAACAGCACGTAGCAATCGGTCGAATCTCGAGAGGCATATGGTCACATGATCGGTCGAGCGTGTTTCAAAGTTTGCGCCTAG'
 introns = ['ATCGGTCGAA', 'ATCGGTCGAGCGTGT']
@@ -9,4 +11,4 @@ print(dna)
 for intron in introns:
     dna = dna.replace(intron, '')
 
-print(dna)
+

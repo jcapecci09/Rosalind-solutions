@@ -31,7 +31,6 @@ def main():
             new_sequence += letter
     
     # Write RNA sequence to outfile
-
     toolkit.output(new_sequence, args)
 
 if __name__ == '__main__':

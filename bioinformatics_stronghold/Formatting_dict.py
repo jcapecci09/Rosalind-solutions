@@ -1,14 +1,11 @@
-with open('codons.txt', 'r') as f, \
-     open('new_codons.txt', 'w') as f1:
-    new_document = ''
+
+codon_d = {}
+with open('misc/codon_table.txt', 'r') as f:
+
     for line in f:
-        parts = line.strip().split(' ')
-        f1.write(
-            f"'{parts[0]}':'{parts[1]}',"
-            f"'{parts[7]}':'{parts[8]}',"
-            f"'{parts[14]}':'{parts[15]}',"
-            f"'{parts[21]}':'{parts[22]}',\n")
-
-    
-
+        codons = line.strip().split()
+        codon_d[codons[0]] = codons[1]
+        codon_d[codons[2]] = codons[3]
+        codon_d[codons[4]] = codons[5]
+        codon_d[codons[6]] = codons[7]
 

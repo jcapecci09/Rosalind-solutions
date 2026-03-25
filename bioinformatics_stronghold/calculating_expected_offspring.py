@@ -14,20 +14,11 @@ corresponding dataset: rosalind_iev.txt
 Author: Jimmy Capecci
 """
 
-import argparse
-import sys
+import toolkit
 
 def main():
 
-    # set up praser for command line interface
-    parser = argparse.ArgumentParser(description='Calculates expected offspring that express dominant phenotype')
-    parser.add_argument('-i', '--input', help='input file', required=True)
-    parser.add_argument('-o', '--output', help='output file', required=True)
-
-    # Define infile and outfile
-    args = parser.parse_args(sys.argv[1:])
-    infile = args.input
-    outfile = args.output
+    infile, outfile = toolkit.create_parser('Calculates expected offspring that express dominant phenotype')
 
     # Open input data 
     with open(infile, 'r') as f:

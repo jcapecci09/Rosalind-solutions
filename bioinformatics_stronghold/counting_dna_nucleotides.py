@@ -9,8 +9,7 @@ A C G T
 Author: Jimmy Capecci
 """
 
-import argparse
-import sys
+import toolkit
 
 
 def counter(letter: str, input: str) -> str:
@@ -31,15 +30,8 @@ def counter(letter: str, input: str) -> str:
 
 def main():
 
-    # set up parser
-    parser = argparse.ArgumentParser(description='Counts the respective number of times a nucleotides appears in a dna string')
-    parser.add_argument('-i', '--input', help='input file', required=True)
-    parser.add_argument('-o', '--output', help='output file', required=True)
-
-    # Define infile and outfile
-    args = parser.parse_args(sys.argv[1:])
-    infile = args.input
-    outfile = args.output
+    # Create input and output file
+    infile, outfile = toolkit.create_parser('Counts the respective number of times a nucleotides appears in a dna string')
     
     # Input file to read dna string
     with open(infile, 'r') as file:
