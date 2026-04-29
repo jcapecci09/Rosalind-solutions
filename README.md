@@ -32,3 +32,9 @@ python3 bioinformatics_stronghold/finding_a_shared_motif.py -i datasets/rosalind
 - comment in example script on my solution
 - add workflow mark down file that explains how I solved some of the problems
 
+## Fixes
+I've kind of backed off this project because a few design chooses have irked me. 
+
+* I don't like that running each script via the command line requires specefying the paths.
+* in the toolkit i attempted to standardized the output by creating a function that outputs either a file path or a string, but I can't do the same for input.
+* The way im using my scripts has become quite complex hard to follow the logic
